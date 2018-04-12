@@ -12,12 +12,12 @@ public class BerlinClockBDDSteps {
     private String time;
 
     @Given("^the time is (.*)$")
-    public void theTimeIs(String time) throws Throwable {
+    public void theTimeIs(String time) {
         this.time = time;
     }
 
     @Then("^the clock should look like:$")
-    public void theClockShouldLookLike(String expectedBerlinClockOutput) throws Throwable {
+    public void theClockShouldLookLike(String expectedBerlinClockOutput) {
         assertThat(berlinClock.convertTime(time), is(expectedBerlinClockOutput));
     }
 }
