@@ -18,5 +18,8 @@ target/
 # Mac .DS_store files #
 .DS_store
 
+# Vim temporary files #
+.*.swp
+
 /log
 /target
