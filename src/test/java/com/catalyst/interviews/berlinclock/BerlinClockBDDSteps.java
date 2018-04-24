@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class BerlinClockBDDSteps {
 
-    private TimeConverter berlinClock;
+    private TimeConverter berlinClock = new TimeConverterImpl();
     private String time;
 
     @Given("^the time is (.*)$")
